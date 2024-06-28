@@ -41,6 +41,11 @@ def parse_expression(text):
             operation = operations[word]
             break
     
+    # Si la palabra no pertenece a un numero o una operacion valida, se elimina
+    if word is not operation and word is not numbers:
+        words.remove(word)
+
+
     if not operation:
         print("No se encontró una operación válida en el texto.")
         return None, None, None
