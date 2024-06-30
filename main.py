@@ -11,12 +11,8 @@ def main():
         if expression_result:
             numbers, operation = expression_result
             
-            # Se establece to_binary en True para convertir siempre el resultado a binario
-            to_binary = True
-            
             result = calculate(numbers, operation)
             if result is not None:
-                # Asegúrate de que la función calculate devuelva el resultado en binario cuando to_binary es True
                 print(f"El resultado de la operación es: {result}")
 
 if __name__ == "__main__":

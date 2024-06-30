@@ -11,7 +11,7 @@ def calculate(numbers, operation):
         result = numbers[0]
         try:
             for num in numbers[1:]:
-                result /= num
+                result //= num 
         except ZeroDivisionError:
             print("No se puede dividir por 0")
             return None
