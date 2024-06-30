@@ -18,5 +18,6 @@ def calculate(numbers, operation):
     else:
         print("Operación no válida")
         return None
+
     
     return result

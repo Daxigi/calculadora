@@ -1,7 +1,4 @@
-import pyaudio
-import wave
 import speech_recognition as sr
-
 
 def recognize_audio_from_file(file_path):
     recognizer = sr.Recognizer()
